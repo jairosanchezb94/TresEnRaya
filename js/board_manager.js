@@ -363,4 +363,3 @@ function chekcButtom() {
 		botonX.style.transform = "scale(1.1)";
 	}
 }
-
