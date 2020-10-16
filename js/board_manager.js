@@ -148,8 +148,7 @@ function Chedk_obtions(){
 	if(board[1][1] == 0)obtions++;
 	if(board[1][2] == 0)obtions++;
 	if(board[2][0] == 0)obtions++;
-	if(board[2][1] == 0)obtions++;
-	if(board[2][2] == 0)obtions++;
+	if(board[2][1] == 0)obtions++;	
 }
 
 function Check_Game(){
@@ -161,7 +160,6 @@ function Check_Game(){
 		board[1][2] != 0 &&
 		board[2][0] != 0 &&
 		board[2][1] != 0 &&
-		board[2][2] != 0 &&
 		MENSAJE.style.display != "block"){
 
 	MENSAJE.style.display = "block";
@@ -250,11 +248,6 @@ function checkCell_O(){
 		if(board[0][0]==1 && board[1][1]==1){PaintCircleCell(2, 2);}
 		if(board[1][1]==1 && board[2][2]==1){PaintCircleCell(0, 0);}
 		if(board[0][0]==1 && board[2][2]==1){PaintCircleCell(1, 1);}
-
-		if(board[0][2]==1 && board[1][1]==1){PaintCircleCell(2, 0);}
-		if(board[1][1]==1 && board[2][0]==1){PaintCircleCell(0, 2);}
-		if(board[0][2]==1 && board[2][0]==1){PaintCircleCell(1, 1);}
-
 		
 
 		CheckCell_true = false;
@@ -363,3 +356,4 @@ function chekcButtom() {
 		botonX.style.transform = "scale(1.1)";
 	}
 }
+
